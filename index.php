@@ -1,5 +1,5 @@
 <?php
-// lazy config check/load
+//!lazy config check/load
 if (file_exists('LookingGlass/Config.php')) {
   require 'LookingGlass/Config.php';
   if (!isset($ipv4, $ipv6, $siteName, $siteUrl, $serverLocation, $testFiles, $theme)) {
@@ -85,7 +85,7 @@ if (file_exists('LookingGlass/Config.php')) {
                   }
                 ?></p>
               </div>
-              <p>Your IP Address: <b><a href="#tests" id="userip"><?php echo $_SERVER['REMOTE_ADDR']; ?></a></b></p>
+              <p>Your IP Address: <b><a href="!tests" id="userip"><?php echo $_SERVER['REMOTE_ADDR']; ?></a></b></p>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ if (file_exists('LookingGlass/Config.php')) {
       <section id="tests">
         <div class="row">
           <div class="span12">
-            <form class="well form-inline" id="networktest" action="#results" method="post">
+            <form class="well form-inline" id="networktest" action=" results" method="post">
               <fieldset>
                 <span id="legend">Network tests</span>
                 <div id="hosterror" class="control-group">
@@ -134,7 +134,7 @@ if (file_exists('LookingGlass/Config.php')) {
       <!-- Footer -->
       <footer class="footer nohighlight">
         <p class="pull-right">
-            <a href="#">Back to top</a>
+            <a href=" ">Back to top</a>
         </p>
         <p>Powered by <a href="http://github.com/telephone/LookingGlass">LookingGlass</a></p>
       </footer>
@@ -146,4 +146,4 @@ if (file_exists('LookingGlass/Config.php')) {
     <script src="assets/js/LookingGlass.min.js"></script>
     <script src="assets/js/XMLHttpRequest.min.js"></script>
   </body>
-</html>
+</html> 
